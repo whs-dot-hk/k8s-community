@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="https://unpkg.com/tachyons@4.10.0/css/tachyons.min.css"/>
+  <style>
+    .logo {
+      width: 30px;
+    }
+  </style>
+</head>
+<body class="sans-serif">
+  <header>
+    <nav class="dt w-100 mw9 center">
+      <div class="dtc">
+        <img class="logo dib pl4 v-mid" src="https://avatars3.githubusercontent.com/u/13629408"/>
+        <h1 class="f3 dib v-mid">Community</h1>
+      </div>
+      <div class="dtc">
+        <ul class="list">
+        {{ range .Site.Menus.main }}
+          <li class="dib f5 v-mid pr2">{{ .Name }}</li>
+        {{ end }}
+        </ul>
+      </div>
+    </nav>
+  </header>
+</body>
+</html>

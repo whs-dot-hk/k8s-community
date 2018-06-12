@@ -1,0 +1,33 @@
+baseURL = "http://example.org/"
+languageCode = "en-us"
+title = "Kubernetes Community"
+theme = "kubernetes-community"
+
+[menu]
+
+  [[menu.main]]
+    name = "Steering Committee"
+
+  [[menu.main]]
+    name = "Communication"
+
+  [[menu.main]]
+    name = "Contributers"
+
+  [[menu.main]]
+    name = "Events"
+
+  [[menu.main]]
+    name = "KEPs"
+
+  [[menu.main]]
+    name = "Mentoring"
+
+  [[menu.main]]
+    name = "SIGs"
+
+  [[menu.main]]
+    name = "Working Group"
+
+  [[menu.main]]
+    name = "Community"
