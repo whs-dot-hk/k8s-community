@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="https://unpkg.com/tachyons@4.10.0/css/tachyons.min.css"/>
+</head>
+<body class="sans-serif">
+  <section class="flex flex-wrap w-90 center">
+    {{ range .Site.Data.sigs }}
+      <article class="w-100 w-25-l pr4 pb4">
+        <a href="#0" class="link">
+          <h1 class="f5 black-90">{{ .name }} ({{ .dir }})</h1>
+          <p class="black-60">{{ .mission_statement }}</p>
+        </a>
+      </article>
+    {{ end }}
+  </section>
+</body>
+</html>

@@ -1,0 +1,116 @@
+name: Apps
+dir: sig-apps
+mission_statement: >
+  Covers deploying and operating applications in Kubernetes. We focus on
+  the developer and devops experience of running applications in Kubernetes.
+  We discuss how to define and run apps in Kubernetes, demo relevant tools
+  and projects, and discuss areas of friction that can lead to suggesting
+  improvements or feature requests.
+label: apps
+leadership:
+  chairs:
+  - name: Matt Farina
+    github: mattfarina
+    company: Samsung SDS
+  - name: Adnan Abdulhussein
+    github: prydonius
+    company: Bitnami
+  - name: Kenneth Owens
+    github: kow3ns
+    company: Google
+meetings:
+- description: Regular SIG Meeting
+  day: Monday
+  time: "9:00"
+  tz: "PT (Pacific Time)"
+  frequency: weekly
+  url: https://zoom.us/my/sig.apps
+  archive_url: https://docs.google.com/document/d/1LZLBGW2wRDwAfdBNHJjFfk9CFoyZPcIYGWU7R1PQ3ng/edit#
+  recordings_url: https://www.youtube.com/watch?v=hn23Z-vL_cM&list=PL69nYSiGNLP2LMq7vznITnpd2Fk1YIZF3
+contact:
+  slack: sig-apps
+  mailing_list: https://groups.google.com/forum/#!forum/kubernetes-sig-apps
+  teams:
+  - name: sig-apps-api-reviews
+    description: API Changes and Reviews
+  - name: sig-apps-bugs
+    description: Bug Triage and Troubleshooting
+  - name: sig-apps-feature-requests
+    description: Feature Requests
+  - name: sig-apps-misc
+    description: General Discussion
+  - name: sig-apps-pr-reviews
+    description: PR Reviews
+  - name: sig-apps-proposals
+    description: Design Proposals
+  - name: sig-apps-test-failures
+    description: Test Failures and Triage
+subprojects:
+- name: chart-testing
+  owners:
+  - https://raw.githubusercontent.com/kubernetes-helm/chart-testing/master/OWNERS
+- name: chartmuseum
+  owners:
+  - https://raw.githubusercontent.com/kubernetes-helm/chartmuseum/master/OWNERS
+- name: charts
+  meetings:
+  - description: Charts Chat
+    day: Tuesday
+    time: "9:00"
+    tz: "PT (Pacific Time)"
+    frequency: biweekly
+    url: https://zoom.us/j/166909412
+    archive_url: https://docs.google.com/document/d/1h6UTTuNRbFI81higrN3JUV2XxyzqqVjZET4Xz4WTR-8/edit#heading=h.57pbxthvt6k3
+  owners:
+  - https://raw.githubusercontent.com/kubernetes/charts/master/OWNERS
+  - https://raw.githubusercontent.com/kubernetes-helm/charts-tooling/master/OWNERS
+- name: examples
+  owners:
+  - https://raw.githubusercontent.com/kubernetes/examples/master/OWNERS
+- name: helm
+  meetings:
+  - description: Helm Developer call
+    day: Thursday
+    time: "9:30"
+    tz: "PT (Pacific Time)"
+    frequency: weekly
+    url: https://zoom.us/j/4526666954
+    archive_url: https://docs.google.com/document/d/1d-6xJEx0C78csIYSPKJzRPeWaHG_8W1Hjl72OJggwdc/edit#
+  owners:
+  - https://raw.githubusercontent.com/kubernetes/helm/master/OWNERS
+  - https://raw.githubusercontent.com/kubernetes-helm/community/master/OWNERS
+- name: kompose
+  owners:
+  - https://raw.githubusercontent.com/kubernetes/kompose/master/OWNERS
+- name: monocular
+  owners:
+  - https://raw.githubusercontent.com/kubernetes-helm/monocular/master/OWNERS
+- name: rudder-federation
+  owners:
+  - https://raw.githubusercontent.com/kubernetes-helm/rudder-federation/master/OWNERS
+- name: workloads-api
+  description: The core workloads API, which is composed of the CronJob, DaemonSet, Deployment, Job, ReplicaSet, ReplicationController, and StatefulSet kinds
+  owners:
+  - https://raw.githubusercontent.com/kubernetes/kubernetes/master/pkg/controller/cronjob/OWNERS
+  - https://raw.githubusercontent.com/kubernetes/kubernetes/master/pkg/controller/daemon/OWNERS
+  - https://raw.githubusercontent.com/kubernetes/kubernetes/master/pkg/controller/deployment/OWNERS
+  - https://raw.githubusercontent.com/kubernetes/kubernetes/master/pkg/controller/disruption/OWNERS
+  - https://raw.githubusercontent.com/kubernetes/kubernetes/master/pkg/controller/history/OWNERS
+  - https://raw.githubusercontent.com/kubernetes/kubernetes/master/pkg/controller/job/OWNERS
+  - https://raw.githubusercontent.com/kubernetes/kubernetes/master/pkg/controller/replicaset/OWNERS
+  - https://raw.githubusercontent.com/kubernetes/kubernetes/master/pkg/controller/replication/OWNERS
+  - https://raw.githubusercontent.com/kubernetes/kubernetes/master/pkg/controller/statefulset/OWNERS
+  - https://raw.githubusercontent.com/kubernetes/kubernetes/master/pkg/apis/apps/OWNERS
+  - https://raw.githubusercontent.com/kubernetes/kubernetes/master/pkg/apis/core/v1/OWNERS
+  - https://raw.githubusercontent.com/kubernetes/kubernetes/master/pkg/apis/batch/OWNERS
+  - https://raw.githubusercontent.com/kubernetes/kubernetes/master/pkg/apis/extensions/OWNERS
+  - https://raw.githubusercontent.com/kubernetes/kubernetes/master/pkg/registry/apps/OWNERS
+  - https://raw.githubusercontent.com/kubernetes/kubernetes/master/pkg/registry/batch/OWNERS
+  - https://raw.githubusercontent.com/kubernetes/kubernetes/master/pkg/registry/extensions/OWNERS
+  - https://raw.githubusercontent.com/kubernetes/kubernetes/master/staging/src/k8s.io/api/apps/OWNERS
+  - https://raw.githubusercontent.com/kubernetes/kubernetes/master/staging/src/k8s.io/api/core/v1/OWNERS
+  - https://raw.githubusercontent.com/kubernetes/kubernetes/master/staging/src/k8s.io/api/batch/OWNERS
+  - https://raw.githubusercontent.com/kubernetes/kubernetes/master/staging/src/k8s.io/api/extensions/OWNERS
+  - https://raw.githubusercontent.com/kubernetes/kubernetes/master/test/e2e/apps/OWNERS
+  - https://raw.githubusercontent.com/kubernetes/kubernetes/master/test/integration/daemonset/OWNERS
+  - https://raw.githubusercontent.com/kubernetes/kubernetes/master/test/integration/deployment/OWNERS

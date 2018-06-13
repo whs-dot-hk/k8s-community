@@ -1,0 +1,51 @@
+name: Auth
+dir: sig-auth
+mission_statement: >
+  Covers improvements to Kubernetes authorization, authentication, and
+  cluster security policy.
+label: auth
+leadership:
+  chairs:
+  - name: Eric Chiang
+    github: ericchiang
+    company: Red Hat
+  - name: Jordan Liggitt
+    github: liggitt
+    company: Red Hat
+  - name: Tim Allclair
+    github: tallclair
+    company: Google
+  emeritus_leads:
+  - name: Eric Tune
+    github: erictune
+    company: Google
+  - name: David Eads
+    github: deads2k
+    company: Red Hat
+meetings:
+- description: Regular SIG Meeting
+  day: Wednesday
+  time: "11:00"
+  tz: "PT (Pacific Time)"
+  frequency: biweekly
+  url: https://zoom.us/my/k8s.sig.auth
+  archive_url: https://docs.google.com/document/d/1woLGRoONE3EBVx-wTb4pvp4CI7tmLZ6lS26VTbosLKM/edit#
+  recordings_url: https://www.youtube.com/playlist?list=PL69nYSiGNLP0VMOZ-V7-5AchXTHAQFzJw
+contact:
+  slack: sig-auth
+  mailing_list: https://groups.google.com/forum/#!forum/kubernetes-sig-auth
+  teams:
+  - name: sig-auth-api-reviews
+    description: API Changes and Reviews
+  - name: sig-auth-bugs
+    description: Bug Triage and Troubleshooting
+  - name: sig-auth-feature-requests
+    description: Feature Requests
+  - name: sig-auth-misc
+    description: General Discussion
+  - name: sig-auth-pr-reviews
+    description: PR Reviews
+  - name: sig-auth-proposals
+    description: Design Proposals
+  - name: sig-auth-test-failures
+    description: Test Failures and Triage

@@ -1,0 +1,48 @@
+name: Autoscaling
+dir: sig-autoscaling
+mission_statement: >
+  Covers autoscaling of clusters, horizontal and vertical autoscaling of pods,
+  setting initial resources for pods, topics related to monitoring pods and
+  gathering their metrics (e.g. Heapster)
+label: autoscaling
+leadership:
+  chairs:
+  - name: Marcin Wielgus
+    github: mwielgus
+    company: Google
+  - name: Solly Ross
+    github: directxman12
+    company: Red Hat
+meetings:
+- description: Regular SIG Meeting
+  day: Monday
+  time: "14:00"
+  tz: "UTC"
+  frequency: biweekly/triweekly
+  url: https://zoom.us/my/k8s.sig.autoscaling
+  archive_url: https://docs.google.com/document/d/1RvhQAEIrVLHbyNnuaT99-6u9ZUMp7BfkPupT2LAZK7w/edit
+contact:
+  slack: sig-autoscaling
+  mailing_list: https://groups.google.com/forum/#!forum/kubernetes-sig-autoscaling
+  teams:
+  - name: sig-autoscaling-api-reviews
+    description: API Changes and Reviews
+  - name: sig-autoscaling-bugs
+    description: Bug Triage and Troubleshooting
+  - name: sig-autoscaling-feature-requests
+    description: Feature Requests
+  - name: sig-autoscaling-misc
+    description: General Discussion
+  - name: sig-autoscaling-pr-reviews
+    description: PR Reviews
+  - name: sig-autoscaling-proposals
+    description: Design Proposals
+  - name: sig-autoscaling-test-failures
+    description: Test Failures and Triage
+subprojects:
+- name: autoscaler
+  owners:
+  - https://raw.githubusercontent.com/kubernetes/autoscaler/master/OWNERS
+- name: metrics
+  owners:
+  - https://raw.githubusercontent.com/kubernetes/metrics/master/OWNERS

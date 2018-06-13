@@ -1,0 +1,109 @@
+name: API Machinery
+dir: sig-api-machinery
+mission_statement: >
+  Covers all aspects of API server, API registration and discovery, generic
+  API CRUD semantics, admission control, encoding/decoding, conversion,
+  defaulting, persistence layer (etcd), OpenAPI, CustomResourceDefinition,
+  garbage collection, and client libraries.
+label: api-machinery
+leadership:
+  chairs:
+  - name: Daniel Smith
+    company: Google
+    github: lavalamp
+  - name: David Eads
+    company: Red Hat
+    github: deads2k
+meetings:
+- description: Regular SIG Meeting
+  day: Wednesday
+  time: "11:00"
+  tz: "PT (Pacific Time)"
+  frequency: biweekly
+  url: https://zoom.us/my/apimachinery
+  archive_url: https://goo.gl/0lbiM9
+  recordings_url: https://www.youtube.com/watch?v=Lj1ScbXpnpY&list=PL69nYSiGNLP21oW3hbLyjjj4XhrwKxH2R
+contact:
+  slack: sig-api-machinery
+  mailing_list: https://groups.google.com/forum/#!forum/kubernetes-sig-api-machinery
+  teams:
+  - name: sig-api-machinery-api-reviews
+    description: API Changes and Reviews
+  - name: sig-api-machinery-bugs
+    description: Bug Triage and Troubleshooting
+  - name: sig-api-machinery-feature-requests
+    description: Feature Requests
+  - name: sig-api-machinery-misc
+    description: General Discussion
+  - name: sig-api-machinery-pr-reviews
+    description: PR Reviews
+  - name: sig-api-machinery-proposals
+    description: Design Proposals
+  - name: sig-api-machinery-test-failures
+    description: Test Failures and Triage
+subprojects:
+- name: server-binaries
+  owners:
+  - https://raw.githubusercontent.com/kubernetes/kubernetes/master/cmd/kube-apiserver/OWNERS
+  - https://raw.githubusercontent.com/kubernetes/kubernetes/master/cmd/kube-controller-manager/OWNERS
+  - https://raw.githubusercontent.com/kubernetes/kubernetes/master/cmd/cloud-controller-manager/OWNERS
+  - https://raw.githubusercontent.com/kubernetes/kubernetes/master/cmd/controller-manager/OWNERS
+  - https://raw.githubusercontent.com/kubernetes/kubernetes/master/pkg/kubeapiserver/OWNERS # support for binary
+  - https://raw.githubusercontent.com/kubernetes/kubernetes/master/pkg/master/OWNERS # support for binary
+- name: control-plane-features
+  owners:
+  - https://raw.githubusercontent.com/kubernetes/kubernetes/master/pkg/controller/garbagecollector/OWNERS
+  - https://raw.githubusercontent.com/kubernetes/kubernetes/master/pkg/controller/namespace/OWNERS
+  - https://raw.githubusercontent.com/kubernetes/kubernetes/master/pkg/quota/OWNERS # if not us, who?
+- name: universal-machinery # i.e., both client and server
+  owners:
+  - https://raw.githubusercontent.com/kubernetes/apimachinery/master/OWNERS
+  - https://raw.githubusercontent.com/kubernetes/kubernetes/master/staging/src/k8s.io/apimachinery/OWNERS
+- name: server-frameworks
+  owners:
+  - https://raw.githubusercontent.com/kubernetes/apiserver/master/OWNERS
+  - https://raw.githubusercontent.com/kubernetes/kubernetes/master/staging/src/k8s.io/apiserver/OWNERS
+- name: server-crd
+  owners:
+  - https://raw.githubusercontent.com/kubernetes/apiextensions-apiserver/master/OWNERS
+  - https://raw.githubusercontent.com/kubernetes/kubernetes/master/staging/src/k8s.io/apiextensions-apiserver/OWNERS
+- name: server-api-aggregation
+  owners:
+  - https://raw.githubusercontent.com/kubernetes/kube-aggregator/master/OWNERS
+  - https://raw.githubusercontent.com/kubernetes/kubernetes/master/staging/src/k8s.io/kube-aggregator/OWNERS
+- name: server-sdk
+  owners:
+  - https://raw.githubusercontent.com/kubernetes/sample-apiserver/master/OWNERS
+  - https://raw.githubusercontent.com/kubernetes/kubernetes/master/staging/src/k8s.io/sample-apiserver/OWNERS
+  - https://raw.githubusercontent.com/kubernetes/sample-controller/master/OWNERS
+  - https://raw.githubusercontent.com/kubernetes/kubernetes/master/staging/src/k8s.io/sample-controller/OWNERS
+  - https://raw.githubusercontent.com/kubernetes-incubator/apiserver-builder/master/OWNERS
+  - https://raw.githubusercontent.com/kubernetes-sigs/controller-runtime/master/OWNERS
+  - https://raw.githubusercontent.com/kubernetes-sigs/kubebuilder/master/OWNERS
+- name: idl-schema-client-pipeline
+  owners:
+  - https://raw.githubusercontent.com/kubernetes/gengo/master/OWNERS # possibly should be totally separate
+  - https://raw.githubusercontent.com/kubernetes/code-generator/master/OWNERS
+  - https://raw.githubusercontent.com/kubernetes/kubernetes/master/staging/src/k8s.io/code-generator/OWNERS
+  - https://raw.githubusercontent.com/kubernetes/kube-openapi/master/OWNERS
+  - https://raw.githubusercontent.com/kubernetes/api/master/OWNERS
+  - https://raw.githubusercontent.com/kubernetes/kubernetes/master/staging/src/k8s.io/api/OWNERS
+  - https://raw.githubusercontent.com/kubernetes-client/gen/master/OWNERS
+- name: kubernetes-clients
+  owners:
+  - https://raw.githubusercontent.com/kubernetes-client/community/master/OWNERS
+  - https://raw.githubusercontent.com/kubernetes-client/csharp/master/OWNERS
+  - https://raw.githubusercontent.com/kubernetes-client/go-base/master/OWNERS
+  - https://raw.githubusercontent.com/kubernetes-client/go/master/OWNERS
+  - https://raw.githubusercontent.com/kubernetes-client/haskell/master/OWNERS
+  - https://raw.githubusercontent.com/kubernetes-client/java/master/OWNERS
+  - https://raw.githubusercontent.com/kubernetes-client/javascript/master/OWNERS
+  - https://raw.githubusercontent.com/kubernetes-client/python-base/master/OWNERS
+  - https://raw.githubusercontent.com/kubernetes-client/ruby/master/OWNERS
+  - https://raw.githubusercontent.com/kubernetes-client/typescript/master/OWNERS
+  - https://raw.githubusercontent.com/kubernetes-incubator/client-python/master/OWNERS
+  - https://raw.githubusercontent.com/kubernetes/client-go/master/OWNERS
+  - https://raw.githubusercontent.com/kubernetes/kubernetes/master/staging/src/k8s.io/client-go/OWNERS
+- name: universal-utils # There is no reason why this is in api-machinery
+  owners:
+- https://raw.githubusercontent.com/kubernetes/utils/master/OWNERS
