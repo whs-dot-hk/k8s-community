@@ -28,6 +28,3 @@ theme = "kubernetes-community"
 
   [[menu.main]]
     name = "Working Group"
-
-  [[menu.main]]
-    name = "Community"
